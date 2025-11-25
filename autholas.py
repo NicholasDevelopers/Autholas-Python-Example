@@ -6,7 +6,7 @@ import getpass
 
 # Your API configuration
 API_KEY = "YOUR_API_KEY_HERE"
-API_URL = "https://autholas.nicholasdevs.xyz/api/auth"
+API_URL = "https://autholas.nicholasdevs.my.id/api/auth"
 
 def get_hardware_id():
     """Generate hardware ID"""
@@ -100,4 +100,5 @@ def authenticate(username, password, hwid):
             
     except requests.exceptions.RequestException as e:
         print(f"Network error: {str(e)}")
+
         return {'success': False, 'error': str(e)}
